@@ -1,4 +1,5 @@
 ﻿using SpecDeck.Core;
+using Specifications.Models.Filtering.Criteria;
 using Specifications.Models.Specs.DigitalContentItem;
 using Specifications.Specs.DigitalItem;
 

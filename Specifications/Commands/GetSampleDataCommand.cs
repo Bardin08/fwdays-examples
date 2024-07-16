@@ -27,8 +27,6 @@ public class GetSampleDataCommand(IDigitalContentRepository repository) : IComma
 
         var filtered = _repository.ListPaginatedAsync(specContext);
         await foreach (var item in filtered)
-        {
             Console.WriteLine(item);
-        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using SpecDeck.Core;
+using Specifications.Models.Filtering.Criteria;
 
 namespace Specifications.Models.Filtering;
 
@@ -11,12 +12,10 @@ public abstract class BaseFilterMapper<TModel>
         if (filter.FilterNodes == null)
             return Specification<TModel>.True;
 
-        var specs = new List<(LogicalOperator, Specification<TModel>)>();
-        foreach (var node in filter.FilterNodes)
-        {
-            var spec = MapGroup(node, filter.Operator);
-            specs.Add((filter.Operator, spec));
-        }
+        var specs = filter.FilterNodes
+            .Select(node => MapGroup(node, filter.Operator))
+            .Select(spec => (filter.Operator, spec))
+            .ToList();
 
         return AggregateSpecs(specs);
     }

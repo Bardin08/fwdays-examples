@@ -1,4 +1,4 @@
-﻿namespace Specifications.Models.Filtering;
+﻿namespace Specifications.Models.Filtering.Criteria;
 
 public record StringFilterCriteria : IFilterCriteria
 {

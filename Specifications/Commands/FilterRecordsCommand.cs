@@ -1,5 +1,6 @@
 ﻿using Specifications.Models;
 using Specifications.Models.Filtering;
+using Specifications.Models.Filtering.Criteria;
 using Specifications.Models.Filtering.Fluent;
 using Specifications.Persistence;
 using Specifications.Specs;

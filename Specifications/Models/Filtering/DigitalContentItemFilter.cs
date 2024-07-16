@@ -1,4 +1,6 @@
-﻿namespace Specifications.Models.Filtering;
+﻿using Specifications.Models.Filtering.Criteria;
+
+namespace Specifications.Models.Filtering;
 
 public class DigitalContentItemFilter : FilterNode
 {

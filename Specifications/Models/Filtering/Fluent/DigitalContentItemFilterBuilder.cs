@@ -1,4 +1,6 @@
-﻿namespace Specifications.Models.Filtering.Fluent;
+﻿using Specifications.Models.Filtering.Criteria;
+
+namespace Specifications.Models.Filtering.Fluent;
 
 public class DigitalContentItemFilterBuilder : FilterNodeBuilder
 {
